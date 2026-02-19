@@ -1,3 +1,28 @@
 spring:
   application:
     name: resell
+  threads:
+    virtual:
+      enabled: true
+
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
+
+server:
+  port: 8081
+
+  logging:
+    level:
+      com.tsm.modulith.resell.advice: { $LOG_LEVEL:INFO }
+    pattern.level: '%5p [traceId=%X{tracingId}]'
+
+  #aggignere stringa di connessione a mongo db locale
+  #comando per startare db da terminale : brew services start mongodb-community@7.0
+  #comando per chiudere db da terminale: brew services stop mongodb-community@7.0
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/tsm-modulith
