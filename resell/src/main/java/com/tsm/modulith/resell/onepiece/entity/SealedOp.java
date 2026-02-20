@@ -21,6 +21,9 @@ public class SealedOp {
     private LocalDate dataAcquisto;
     private String acquistatoPresso;
     private Double costoAcquisto;
+    private byte[] foto;
+    private String stato; // disponibile o non disponibile
+    private String statoAcquisto;
     private String note;
     private Vendita vendita;
 

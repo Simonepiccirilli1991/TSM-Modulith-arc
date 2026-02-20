@@ -15,11 +15,12 @@ public record AddSealedOpRequest(
         LocalDate dataAcquisto,
         String acquistatoPresso,
         Double costoAcquisto,
+        byte[] foto,
         String note
 
 ) {
 
-        private void validaRequest(){
+        public void validaRequest(){
 
             if(ObjectUtils.isEmpty(nomeSealed) || ObjectUtils.isEmpty(espansione) || ObjectUtils.isEmpty(codiceSealed)
             || ObjectUtils.isEmpty(dataAcquisto) || ObjectUtils.isEmpty(costoAcquisto)){
