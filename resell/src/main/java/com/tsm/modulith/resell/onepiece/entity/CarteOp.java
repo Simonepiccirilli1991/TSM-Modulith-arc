@@ -23,6 +23,9 @@ public class CarteOp {
     private Double costoCarta;
     private LocalDate dataAcquisto;
     private String note;
+    //sezione stato
+    private String stato; // disponibile & non disponibile
+    private String statoAcquisto; // acquistata & venduta
     // sezione per gradata
     private boolean gradata;
     private String enteGradazione;
