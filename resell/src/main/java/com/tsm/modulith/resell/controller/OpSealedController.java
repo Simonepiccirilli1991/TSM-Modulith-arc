@@ -17,7 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("api/v1/op")
 @RequiredArgsConstructor
-public class OpController {
+public class OpSealedController {
 
 
     private final SealedOpService sealedOpService;
