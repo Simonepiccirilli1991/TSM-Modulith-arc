@@ -3,9 +3,6 @@ package com.tsm.modulith.resell.pokemon.service;
 
 import com.tsm.modulith.resell.onepiece.dto.BaseResponse;
 import com.tsm.modulith.resell.onepiece.dto.Vendita;
-import com.tsm.modulith.resell.onepiece.dto.request.AddVenditaSealedOpRequest;
-import com.tsm.modulith.resell.onepiece.dto.response.AddVenditaSealedOpResponse;
-import com.tsm.modulith.resell.onepiece.entity.SealedOp;
 import com.tsm.modulith.resell.onepiece.exception.OpException;
 import com.tsm.modulith.resell.pokemon.entity.PokemonSealed;
 import com.tsm.modulith.resell.pokemon.exception.PokemonException;
@@ -20,8 +17,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
-import java.time.LocalDate;
-import java.util.List;
 
 @Service
 @Slf4j
